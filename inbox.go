@@ -20,8 +20,8 @@ type inbox struct {
 }
 
 // newInbox - create new inbox
-func newInbox() inbox {
-	i := inbox{counterIn: 1, counterOut: 1}
+func newInbox() *inbox {
+	i := &inbox{counterIn: 1, counterOut: 1}
 	i.box.Store(0, &Transaction{})
 	return i
 }
