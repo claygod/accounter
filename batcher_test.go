@@ -10,20 +10,6 @@ import (
 	"time"
 )
 
-/*
-func TestBatcherXwe222(t *testing.T) {
-	tr := &Transaction{tid: 111}
-	tr.Credit(1, "USD", 1)
-	tr.Debit(2, "USD", 1)
-
-	nb := newBatcher(nil, nil, 4)
-	//deferred := make([]*Transaction, 0, 22222)
-
-	if nb.size == 150 {
-		t.Error("Error ")
-	}
-}
-*/
 func TestAccounterAaa(t *testing.T) {
 	a := New(32)
 	time.Sleep(time.Millisecond * 5)
